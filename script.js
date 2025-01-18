@@ -4,25 +4,11 @@ const USERS_KEY = "modbay_users";
 // Daftar addons Minecraft Bedrock
 const addons = [
   {
-    name: "Cool Mod",
-    description: "Mod ini menambahkan fitur keren ke Minecraft.",
-    image: "https://via.placeholder.com/300x200.png?text=Cool+Mod",
-    category: "utility",
+    name: "Mountable Spiders Addon",
+    description: "Mod ini menambahkan Jenis-Jenis Spider",
+    image: "https://iili.io/2PEvDZl.md.png",
+    category: "addons",
     downloadUrl: "https://contoh-url.com/cool-mod.mcaddon"
-  },
-  {
-    name: "Adventure Addon",
-    description: "Tambahkan elemen petualangan baru ke dunia Minecraft Anda.",
-    image: "https://via.placeholder.com/300x200.png?text=Adventure+Addon",
-    category: "adventure",
-    downloadUrl: "https://contoh-url.com/adventure-addon.mcaddon"
-  },
-  {
-    name: "Realistic Textures",
-    description: "Perbarui dunia Minecraft Anda dengan tekstur realistis.",
-    image: "https://via.placeholder.com/300x200.png?text=Realistic+Textures",
-    category: "textures",
-    downloadUrl: "https://contoh-url.com/realistic-textures.mcaddon"
   }
 ];
 
