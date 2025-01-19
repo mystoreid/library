@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login - ModBay</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+
+  <div class="admin-login-container">
+    <h1>Admin Login</h1>
+    <form id="login-form"> 
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Validasi login (ganti dengan logika autentikasi server Anda)
+      if (username === 'admin' && password === 'password') {
+        // Login berhasil, alihkan ke admin-addons.html
+        window.location.href = 'admin-addons.html';
+      } else {
+        // Login gagal, tampilkan pesan error
+        alert('Username atau password salah!');
+      }
+    });
+  </script>
+</body>
+</html>

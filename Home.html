@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ModBay - Situs Mod Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+  </head> 
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">ModBay</a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Kategori <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-content" id="category-dropdown">
+                </ul>
+            </li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="#">Home</a> > <span>Mod Unggulan</span>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <h1>Temukan Mod Game Terbaik</h1>
+        <p>Ubah pengalaman bermain game Anda dengan ribuan mod gratis.</p>
+        <button>Jelajahi Mod</button>
+      </div>
+    </section>
+    <section class="search">
+      <div class="container">
+        <input type="text" id="search-input" placeholder="Cari mod...">
+        <button id="search-button">Cari</button>
+        <div id="search-results"></div>
+      </div>
+    </section>
+    <section class="filter">
+      <div class="container">
+        <label for="category-filter">Filter Kategori:</label>
+        <select id="category-filter">
+          <option value="all">Semua</option>
+          </select>
+      </div>
+    </section>
+    <section class="featured-mods">
+      <div class="container">
+        <h2>Mod Unggulan</h2>
+        <div class="mod-list" id="mod-list"></div>
+      </div>
+    </section>
+    <div class="pagination">
+      <div class="container"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 ModBay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
