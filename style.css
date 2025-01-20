@@ -1,0 +1,379 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif; 
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  position: relative; 
+}
+
+.search-container i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; 
+  padding-left: 30px; 
+}
+
+#clear-search {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f0f0f0; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Mod Grid */
+.mod-grid {
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  grid-gap: 20px;
+}
+
+.mod-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ddd;
+  display: flex;
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.mod-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.mod-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px; 
+}
+
+.mod-card h3 {
+  margin-top: 10px; 
+}
+
+.mod-card .category {
+  font-size: 0.9em;
+  color: #777; 
+}
+
+.mod-card .rating {
+  font-size: 0.9em;
+  color: #f80; 
+}
+
+.mod-card .version {
+  font-size: 0.9em;
+  color: #555; 
+}
+
+.mod-card .date {
+  font-size: 0.9em;
+  color: #555; 
+}
+
+/* Footer */
+footer {
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*  Halaman Detail Mod */
+.mod-header {
+  margin-bottom: 20px;
+}
+
+.mod-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.mod-header .category {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.mod-header .rating {
+  font-size: 1.2em;
+  color: #f80;
+}
+
+.mod-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr; 
+  gap: 20px;
+}
+
+.mod-image img {
+  transition: transform 0.3s ease;
+}
+
+.mod-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Share */
+.social-share a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-share i {
+  margin-right: 5px;
+}
+
+/*  Responsiveness (contoh) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+  }
+
+  .mod-content {
+    grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+  }
+}
+
+#download-button {
+  background-color: #28a745; /* Hijau */
+  background-image: linear-gradient(to right, #007bff, #0056b3); 
+  color: white;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px; 
+  transition: transform 0.2s ease; 
+}
+
+#download-button:hover {
+  background-color: #218838; /* Hijau lebih gelap */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1); 
+}
+
+/* ... (style untuk elemen lain) */
+
+/* Style untuk mod card di bagian "Mod Terbaru" */
+.mod-grid .mod-card {
+  display: flex; 
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mod-grid .mod-card img {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover; 
+  margin-right: 10px; 
+}
+
+.mod-grid .mod-info {
+  /* Style untuk informasi mod */
+}
+
+.mod-grid .mod-info h3 {
+  margin: 0 0 5px 0; 
+  font-size: 18px;
+}
+
+.mod-grid .mod-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.mod-grid .view-count {
+  color: #777; 
+}
+
+.mod-grid .upload-time {
+  font-style: italic;
+}
+
+#mod-table_paginate {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+#mod-table_paginate .paginate_button {
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 8px 12px;
+  margin: 0 5px; 
+  background-color: white; 
+  color: #333; 
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+#mod-table_paginate .paginate_button:hover {
+  background-color: #eee; 
+}
+
+#mod-table_paginate .paginate_button.current {
+  background-color: #007bff; 
+  color: white; 
+  border-color: #007bff; 
+}
+
+#mod-table_paginate .paginate_button.disabled {
+  opacity: 0.5; 
+  cursor: default; 
+}
+
+#mod-table_paginate .ellipsis {
+  padding: 8px 12px;
+  margin: 0 5px;
+}
+
+#mod-list{
+  display: none;
+}
+
+.p {
+  display: none;
+}
+
+.lihat-detail {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff; /* Warna biru */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px; 
+}
+
+.lihat-detail:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap */
+}
+
+.search-button {
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+
+.search-button .button {
+  /* Gunakan style yang sama dengan tombol lain di website */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.search-filter1 {
+  display: none;
+}

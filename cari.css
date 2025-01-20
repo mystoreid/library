@@ -1,0 +1,146 @@
+/* Style untuk card mod di halaman search */
+.search-results .mod-card {
+  display: flex; 
+  align-items: flex-start; 
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+}
+
+.search-results .mod-card img {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover; 
+  margin-right: 10px; 
+}
+
+.search-results .mod-info {
+  /* Style untuk informasi mod */
+}
+
+.search-results .mod-info h3 {
+  margin: 0 0 5px 0; 
+  font-size: 18px;
+}
+
+.search-results .mod-info p {
+  margin: 0 0 5px 0; 
+  font-size: 14px;
+}
+
+.search-results .view-count {
+  color: #777; 
+}
+
+.search-results .upload-time {
+  font-style: italic;
+}
+
+.search-results .lihat-detail {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff; /* Warna biru */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px; 
+}
+
+.search-results .lihat-detail:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap */
+}
+
+/* Styling container utama */
+.search-filter {
+  background-color: #f8f8f8; /* Warna latar belakang */
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px; 
+}
+
+/* Styling input pencarian */
+#search-input {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-bottom: 10px;
+}
+
+/* Styling filter kategori */
+#category-filter {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-bottom: 10px;
+  appearance: none; 
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 14l-4-4h8z' fill='rgba(0,0,0,0.5)'/%3E%3C/svg%3E"); 
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  background-size: 16px; 
+}
+
+/* Styling tombol "Cari" */
+#search-form button {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: #0056b3; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ... style lainnya ... */
+
+header {
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+header nav li {
+  margin-left: 20px; 
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333; 
+  color: white;
+  text-align: center; 
+  padding: 10px 0; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

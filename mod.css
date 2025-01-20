@@ -1,0 +1,153 @@
+/* Styling untuk header */
+.mod-header {
+  background-color: #f8f9fa; /* Warna background */
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6; /* Garis bawah */
+  margin-bottom: 20px;
+}
+
+.mod-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Styling untuk gambar */
+.mod-image {
+  text-align: center; /* Pusatkan gambar */
+  margin-bottom: 20px;
+}
+
+.mod-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk detail mod */
+.mod-details {
+  margin-bottom: 20px;
+}
+
+.mod-details p {
+  margin-bottom: 10px;
+}
+
+/* Styling untuk tombol download */
+#download-button {
+  background-color: #007bff; /* Biru */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#download-button:hover {
+  background-color: #0056b3; /* Biru lebih gelap */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk rekomendasi mod */
+#recommendations {
+  margin-top: 30px;
+}
+
+#recommendations .mod-card {
+  /* Gunakan style yang sama dengan di index.html, 
+     atau sesuaikan jika perlu */
+}
+
+/* Styling untuk rating dan review */
+.rating-review {
+  margin-top: 30px;
+}
+
+/* Styling untuk komentar */
+.comments {
+  margin-top: 30px;
+}
+
+/* Styling untuk form */
+#review-form,
+#comment-form {
+  margin-top: 20px;
+}
+
+#review-form label,
+#comment-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#review-form textarea,
+#comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Styling untuk tombol submit */
+#review-form button[type="submit"],
+#comment-form button[type="submit"] {
+  background-color: #28a745; /* Hijau */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#review-form button[type="submit"]:hover,
+#comment-form button[type="submit"]:hover {
+  background-color: #218838; /* Hijau lebih gelap */
+}
+
+/* Styling untuk social share */
+.social-share {
+  margin-top: 30px;
+}
+
+.social-share a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-share i {
+  margin-right: 5px;
+}
+
+.rating .fa-star {
+  color: #ccc; /* Warna bintang kosong */
+}
+
+.rating .checked {
+  color: #ffc107; /* Warna bintang penuh */
+}
+
+.rating-bar {
+  width: 100%; 
+  background-color: #e9ecef; 
+  border-radius: 5px; 
+}
+
+.rating-progress {
+  height: 10px; 
+  background-color: #ffc107; 
+  border-radius: 5px; 
+}

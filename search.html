@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cari Mod</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cari.css">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Website Mod Minecraft</div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="kategori.html"><i class="fas fa-list"></i> Kategori</a></li>
+        <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang Kami</a></li>
+        <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cari Mod</h1>
+
+    <div class="search-filter">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Cari mod...">
+        <select id="category-filter">
+          <option value="">Semua Kategori</option>
+        </select>
+        <button type="submit">Cari</button>
+      </form>
+    </div>
+
+    <div id="search-results"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Website Mod Minecraft</p>
+  </footer>
+
+  <script src="search.js"></script>
+</body>
+</html>

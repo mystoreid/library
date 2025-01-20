@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <section id="add-mod-section">
+    <h2>Tambah Mod</h2>
+    <form id="add-mod-form">
+      <div>
+        <label for="name">Nama Mod:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="image">File Gambar:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+      </div>
+      <div>
+        <label for="category">Kategori:</label>
+        <input type="text" id="category" name="category" required>
+      </div>
+      <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+      </div>
+      <div>
+        <label for="download">Link Download:</label>
+        <input type="text" id="download" name="download" required>
+      </div>
+      <div>
+        <label for="mcVersion">Versi Minecraft:</label>
+        <input type="text" id="mcVersion" name="mcVersion" required>
+      </div>
+      <div>
+        <label for="releaseDate">Tanggal Rilis:</label>
+        <input type="date" id="releaseDate" name="releaseDate" required>
+      </div>
+      <div>
+        <label for="description">Deskripsi:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <button type="submit">Tambah Mod</button>
+    </form>
+  </section>
+
+  <section id="mod-list-section">
+    <h2>Daftar Mod</h2>
+    <div id="admin-mod-list"></div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>

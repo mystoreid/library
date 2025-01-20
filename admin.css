@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#add-mod-section {
+  flex: 1 300px; 
+  margin-right: 20px; 
+}
+
+#mod-list-section {
+  flex: 2 600px; 
+}
+
+#add-mod-form label {
+  display: block; 
+  margin-bottom: 5px;
+}
+
+#add-mod-form input,
+#add-mod-form select,
+#add-mod-form textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 4px; 
+  margin-bottom: 10px; 
+}
+
+#mod-table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+#mod-table th,
+#mod-table td {
+  padding: 8px;
+  text-align: left; 
+  border: 1px solid #ddd; 
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #add-mod-section,
+  #mod-list-section {
+    flex-basis: 100%; 
+    margin-bottom: 20px;
+  }
+}

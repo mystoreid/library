@@ -1,0 +1,63 @@
+/* Styling container utama */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Styling judul */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling form */
+#edit-mod-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#edit-mod-form div {
+  margin-bottom: 15px; 
+}
+
+#edit-mod-form label {
+  display: block; 
+  margin-bottom: 5px;
+}
+
+#edit-mod-form input[type="text"],
+#edit-mod-form input[type="file"],
+#edit-mod-form select,
+#edit-mod-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+#edit-mod-form textarea {
+  resize: vertical; 
+}
+
+/* Styling tombol submit */
+#edit-mod-form button[type="submit"] {
+  background-color: #28a745; /* Hijau */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#edit-mod-form button[type="submit"]:hover {
+  background-color: #218838; /* Hijau lebih gelap */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

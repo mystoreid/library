@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detail Mod</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mod.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+  <header>
+    </header>
+
+  <main>
+    <div class="mod-header">
+      <h1 id="mod-name"></h1>
+      <p class="category" id="mod-category"></p> 
+      <p class="rating" id="mod-rating"></p> 
+    </div>
+
+    <div class="mod-content">
+      <div class="mod-image">
+        <img id="mod-image" src="" alt="">
+      </div>
+
+      <div class="mod-details">
+        <p id="mod-description"></p>
+        <p class="version" id="mod-version"></p> 
+        <p class="date" id="mod-release-date"></p> 
+        <a href="#" id="download-button" class="button"><i class="fas fa-download"></i>  Download</a> 
+      </div>
+    </div>
+
+    <h2>Rekomendasi Mod</h2>
+    <div id="recommendations"></div>
+
+    <h2>Rating dan Review</h2>
+    <div id="mod-rating-display"></div> 
+    <div id="mod-reviews"></div>
+
+    <h3>Berikan Rating dan Review</h3>
+    <form id="review-form">
+      <label for="rating">Rating (1-5):   <span class="fa fa-star checked"></span> 
+  <span class="fa fa-star checked"></span> 
+  <span class="fa fa-star checked"></span> 
+  <span class="fa fa-star-half-alt checked"></span> 
+  <span class="fa fa-star"></span> </label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+      <label for="comment">Review:</label><br>
+      <textarea id="comment" name="comment" required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Komentar</h2>
+    <div id="comments-section">
+      <div id="comments-list"></div>
+
+      <h3>Tambahkan Komentar</h3>
+      <form id="comment-form">
+        <label for="comment-text">Komentar:</label><br>
+        <textarea id="comment-text" name="comment" required></textarea><br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <h2>Bagikan Mod ini</h2>
+    <div class="social-share">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=[URL_MOD]" target="_blank">
+        <i class="fab fa-facebook-f"></i> Bagikan di Facebook
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=[URL_MOD]&text=Lihat mod Minecraft keren ini!" target="_blank">
+        <i class="fab fa-twitter"></i> Bagikan di Twitter
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    </footer>
+
+  <script src="mod.js"></script>
+</body>
+</html>
